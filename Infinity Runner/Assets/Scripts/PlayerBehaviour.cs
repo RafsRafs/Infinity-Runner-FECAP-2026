@@ -12,7 +12,7 @@ public class PlayerBehaviour : MonoBehaviour
     void Update()
     {
         moveX = Input.GetAxis("Horizontal") * Time.deltaTime;
-        moveY = Input.GetAxis("Vertical") * Time.deltaTime * 2;
+        moveY = Input.GetAxis("Vertical") * Time.deltaTime;
 
         transform.Translate(moveX, moveY, 0);
     }
